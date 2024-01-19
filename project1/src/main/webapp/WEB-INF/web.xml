@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<element>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>project1</display-name>
+  <servlet> 
+    <servlet-name>abc</servlet-name>
+    <servlet-class>servlet.RegisterServlet</servlet-class>
+    <servlet-class>servlet.LoginServlet</servlet-class>
+    <servlet-class>servlet.AddProductServlet</servlet-class>
+    <servlet-class>servlet.GetProductServlet</servlet-class>
+    <servlet-class>servlet.SearchProductServlet</servlet-class>
+    <servlet-class>servlet.GetCartServlet</servlet-class>
+    <servlet-class>servlet.AddToCartServlet</servlet-class>
+    <servlet-class>servlet.GetPurchasesServlet</servlet-class>
+    <servlet-class>servlet.GetCartServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+     <servlet-name> abc</servlet-name>
+     <url-pattern>/RegisterServlet</url-pattern>
+      <url-pattern>/LoginServlet</url-pattern>
+      <url-pattern>/AddProductServlet</url-pattern>
+      <url-pattern>/GetProductServlet</url-pattern>
+        <url-pattern>/SearchProductServlet</url-pattern>
+          <url-pattern>/GetCartServlet</url-pattern>
+            <url-pattern>/AddToCartServlet</url-pattern>
+            <url-pattern>/GetPurchasesServlet</url-pattern>
+            <url-pattern>/GetCartServlet</url-pattern>
+  </servlet-mapping>
+  <dependency>
+    <groupId>com.google.code.gson</groupId>
+    <artifactId>gson</artifactId>
+    <version>2.8.9</version> <!-- Use the latest version available -->
+</dependency>
+  
+</web-app>
+</element>
+
+
+
+
